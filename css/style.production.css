@@ -15,7 +15,7 @@
   --lighter pink: #f9e0e4;
   --gold: #e8c17e;
   --green: #7cb842;*/
-
+  
 :root {
   --font-weight-700: 700;
   --font-weight-400: 400;
@@ -58,11 +58,17 @@ p {
   color: #ffffff;
   background-color: inherit;
 }
+
+table {
+  border: 2px solid #fff;
+}
+
 th {
   font-size: 20px;
   font-weight: 800;
   color: #fff;
   background-color: inherit;
+  border: 2px solid #fff;
 }
 
 td {
@@ -72,6 +78,7 @@ td {
   font-weight: var(--font-weight-700);
   color: #fff;
   background-color: inherit;
+  border: 2px solid #fff;
 }
 
 a {
@@ -173,8 +180,8 @@ button:focus,
 
 .page-footer-1 {
   width: 100%;
-  bottom: 0;
   position: absolute;
+  bottom: 0;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,8 +195,8 @@ button:focus,
 
 .page-footer-2 {
   width: 100%;
-  bottom: 0;
   position: relative;
+  bottom: 0;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,8 +254,8 @@ button:focus,
 .form {
   color: inherit;
   background: #fcbdc7;
-  -webkit-box-shadow: 0 30px 60px 0 #ffffff;
-          box-shadow: 0 30px 60px 0 #ffffff;
+  -webkit-box-shadow: 0 30px 60px 0 #fff;
+          box-shadow: 0 30px 60px 0 #fff;
   border-radius: 5px;
   max-width: 480px;
   margin-left: auto;
@@ -272,8 +279,8 @@ button:focus,
 }
 
 .name {
-  background-color: #f9e0e4;
-  color: white;
+  background-color: #fff;
+  color: #7cb842;
 }
 
 .name:hover {
@@ -286,8 +293,8 @@ button:focus,
 }
 
 .email {
-  background-color: #f9e0e4;
-  color: #ffffff;
+  background-color: #fff;
+  color: #7cb842;
   height: 2em;
 }
 
@@ -301,8 +308,8 @@ button:focus,
 }
 
 .message {
-  background-color: #f9e0e4;
-  color: #ffffff;
+  background-color: #fff;
+  color: #7cb842;
   overflow: hidden;
   height: 10rem;
 }
@@ -360,33 +367,92 @@ button:focus,
   }
 }
 
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @supports (display: grid) {
  .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 25px 1fr 25px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 300px 25px 300px 25px 300px;
+    grid-template-columns: 300px 300px 300px;
     grid-gap: 25px;
     margin: 0;
  }
 }
 
 .grid__item {
-  color: #ffffff;
+  color: #fff;
   background-color:#fcbdc7;
   width: auto;
-   min-height: auto;
-   margin: 0;
+  min-height: auto;
+  margin: 0;
+  border: 2px solid #fff;
 }
 
 @media all and (max-width: 500px) {
+	.navigation-list li {
+ 		 margin-left: 10px;
+	}
+}
+
+@media all and (max-width: 470px) {
+	.page-header {
+		font-size: 75%;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.opener{
+		font-size: 20px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.intro {
+		font-size: 18px;
+	}
+}
+
+@media all and (max-width: 550px) {
+	.temp__portrait {
+		position: fixed;
+		top: 35%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+	}
+}
+
+@media all and (max-width: 550px) {
+	.home-content {
+		position: fixed;
+		top: 72%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+	}
+}
+
+@media all and (max-width: 555px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 555px) and (max-width: 750px) {
   .grid {
     -ms-grid-columns: 1fr 25px 1fr;
     grid-template-columns: 1fr 1fr;

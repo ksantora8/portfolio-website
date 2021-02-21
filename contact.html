@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-  <title> Katherine Santora </title>
-  <link rel="style" type="text/css" href="css/normalizecss.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-</head>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <title> Katherine Santora </title>
+    <link rel="style" type="text/css" href="css/normalizecss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
   <body>
     <header class="page-header">
       <img src="img/logo.svg" alt="personal logo. K. S. written in capital lettering" class="logo">
@@ -34,29 +34,31 @@
         </ul>
       </nav>
     </header>
-    <div class="content">
-      <h1> Contact Me</h1>
+    <main>
+      <div class="content">
+        <h1> Contact Me</h1>
+        <br>
+        12345 Beeboobop Lane <br>
+        Charlotte, NC 28801<br>
+        USA<br>
+        <br>
+        Phone:<a href="tel:+12345678910"> +1(234)567-8910</a>
+        <br>
+        Skype: <a href="skype:username">username</a>
+        <br>
+        Email: <a href="mailto:kathsantora@gmail.com">kathsantora@gmail.com</a>
+      </div>
       <br>
-      12345 Beeboobop Lane <br>
-      Charlotte, NC 28801<br>
-      USA<br>
-      <br>
-      Phone:<a href="tel:+12345678910"> +1(234)567-8910</a>
-      <br>
-      Skype: <a href="skype:username">username</a>
-      <br>
-      Email: <a href="mailto:kathsantora@gmail.com">kathsantora@gmail.com</a>
-    </div>
-    <br>
-  <div class="wrapper">
-      <form class="form">
-        <div class="contact-form-title"><h3> Leave Me a Message</h3> </div>
-        <input type="text" class="name formEntry" placeholder="Name" />
-        <input type="text" class="email formEntry" placeholder="Email"/>
-        <textarea class="message formEntry" placeholder="Message"></textarea>
-        <button class="submit formEntry" onclick="thanks()">Submit</button>
-      </form>
-    </div>
+      <div class="wrapper">
+        <form class="form" action="https://formspree.io/f/moqpzryk" method="post">
+          <div class="contact-form-title"><h3> Leave Me a Message</h3> </div>
+          <input type="text" name="name" class="name formEntry" placeholder="Name*" required />
+          <input type="email" name= "_toreply" class="email formEntry" placeholder="Email*"/>
+          <textarea name="message" class="message formEntry" placeholder="Message"></textarea>
+          <button name="submit" class="submit formEntry" type="submit" value="send" onclick="thanks()">Submit</button>
+        </form>
+      </div>
+    </main>
     <br>
     <footer class="page-footer-2">
       <p>Find Me On</p>
